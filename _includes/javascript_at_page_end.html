@@ -1,0 +1,30 @@
+{% comment %} jQuery first, then Popper.js, then Bootstrap JS {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+{% if page.commentIssueId %}
+{% comment %} Call github API for blog post comments {% endcomment %}
+<script type="text/javascript">
+$.getJSON( "https://api.github.com/repos/blackbox-thinking/blackbox-thinking.github.io/issues/{{page.commentIssueId}}/comments",
+    function loadComments(data) {
+        for (var i=0; i < data.length; i++) {
+            var cuser = data[i].user.login;
+            var cuserlink = data[i].user.html_url;
+            var clink = data[i].html_url;
+            var cbody = data[i].body;
+            var cavatarlink = data[i].user.avatar_url;
+            // var cdate = Date.parse(data[i].created_at).toString("yyyy-MM-dd HH:mm:ss");
+            var cdate = data[i].created_at;
+
+            $("#githubcomment").append("<div class='comment'><div class='commentheader'><div class='commentgravatar'>"
+                + '<img src="' + cavatarlink + '" alt="" width="20" height="20">'
+                + "</div><a class='commentuser' href=\"" + cuserlink + "\">"
+                + cuser + "</a><a class='commentdate' href=\"" + clink
+                + "\">" + cdate + "</a></div><div class='commentbody'>" + cbody + "</div></div>");
+        }
+    }
+);
+</script>
+{% endif %}
