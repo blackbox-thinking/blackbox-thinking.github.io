@@ -1,0 +1,19 @@
+- name: Facebook
+  link: https://www.facebook.com/
+  icon_name: facebook
+- name: Twitter
+  link: https://twitter.com/abid_khairul
+  icon_name: twitter
+- name: YouTube
+  link: https://www.youtube.com/
+  icon_name: youtube
+- name: Instagram
+  link: https://www.instagram.com/
+  icon_name: instagram
+- name: Linkedin
+  link: https://www.linkedin.com/company/blackbox-thinking/
+  icon_name: linkedin
+- name: GitHub
+  link: https://github.com/blackbox-thinking/
+  icon_name: github
+
