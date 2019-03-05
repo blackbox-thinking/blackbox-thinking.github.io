@@ -1,29 +1,15 @@
 ---
 layout: post
 title:  "What to do when your backups fail"
-categories: agile people
+categories: agile people level-all
 author: Abid Khairul
 githubid: abid-khairul
+commentIssueId: 1
+image_thumb: /assets/images/backup_image_thumb.jpg
+image_head: /assets/images/backup_image.jpg
 ---
 
-<h2>Getting started with Ubuntu</h2>
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
+I was working with a customer a while ago when a system upgrade to patch a security vulnerability did not go as planned. While restoring the users profiles and workspaces we realised that the backup had become corrupted and it dawned upon us that most user accounts had been lost.
 
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
-
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
-
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
+This is how the events of that upgrade played out. There were a number of failures and lessons learnt but also some key successes that we'll also discuss.
 

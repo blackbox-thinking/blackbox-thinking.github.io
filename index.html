@@ -1,51 +1,51 @@
 ---
 layout: default
 ---
-  <div  id="intro" class="container-fluid">
-    <div class="row pt-5">
-      <div class="col">&nbsp;</div>
-      <div class="col">
-        <h1>Build the IT Skills<br/>You Need to Succeed</h1>
-      </div>
-    </div>
-    <div class="row py-5">
-      <div class="col">&nbsp;</div>
-      <div class="col">
-          Hi, I'm Abid. I've enjoyed working in the technology sector for over 20 years.
-          I've benefited from working along side very talented individuals in some of the largest companies in the world.
-          I've taught myself most of the skills I use today and now I'm going to teach you how you can succeed with
-          technology in your business, career and hobbies in the same way I have.
-          <br />
-          <br />
-          <div class="header_cta">
-            <a class="btn btn-primary" href="/courses"><span class="buttontext">Learn More</span></a>
+  <div  id="intro">
+    <div class="container-fluid">
+      <div class="row pt-5">
+        <div class="col">
+          <div class="push-to-right">
+          &nbsp;
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-12 pt-5">
+          <div class="push-to-right">
+            <h1>Build the IT Skills<br/>You Need to Succeed</h1>
+            Hi, I'm Abid. I've enjoyed working in the technology sector for over 20 years.
+            I've taught myself most of the skills I use today and now I'm going to
+            teach you how you can use technology to succeed in your life.
+            <br />
+            <br />
+            <div class="header_cta">
+              <a class="btn btn-primary" href="/courses"><span class="buttontext">Learn More</span></a>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
 
-<section class="quote-block">
-<div class="container-fluid bg-info px-5 py-5 m-0">
-  <div class="row d-flex justify-content-center">
-    <div class="col">
-      <div id="quote"><i class="fas fa-quote-left fa-3x"></i> Any sufficiently advanced technology is indistinguishable from magic.</div>
-      <p class="author">– Arthur C. Clarke</p>
+  <div class="container-fluid m-0 bbox-divider">
+    <div class="row">
+      <div class="col">
+        <div>&nbsp;</div>
+      </div>
     </div>
   </div>
-</div>
-</section>
 
 <section class="about-bbox">
 <div class="container-fluid m-0">
-    <div class="col m-2 p-5">
-      <p>Blackbox Thinking started as a freelance technology consultancy. I started it when I got fed up of working freelance through an agency
-      and wanted to take more control of how and what direction my work took me.</p>
+    <div class="col mb-5 p-5">
+      <p>Blackbox Thinking started as a freelance technology consultancy when I got fed up of working freelance through an agency.
+      I wanted to take more control of how and what direction my work took me.</p>
       <p>
-      I've worked in the tech sector for over two decades and felt I had something I could give back to people wanting to work in IT or want to us learn skills to benefit their own businesses, careers or hobbies.
-      I needed a medium that would reach a bigger audience. I needed to find people who genuinely wanted to learn mastery in technology.
+      Now that I've enjoyed learning and working in the tech sector for over two decades I have something I can give back. 
+      I wish to give people who want to learn tech skills a simple and exciting path to benefiting their own businesses, careers or hobbies.
+      I needed a place that would reach a large audience. I needed to find people who genuinely wanted to learn mastery of technology.
       </p>
-      <p>
-      <strong>That medium is here. That person is you.</strong>
+      <p class="text-center">
+      <strong><span class="keep-inline">That place is here.</span> <span class="keep-inline">That person is you.</span></strong>
       </p>
   </div>
 </div>
@@ -53,25 +53,35 @@ layout: default
 
 <section class="blog-post-top-3">
 <div class="container-fluid m-0">
-  <div class="row p-2">
-    <div class="col p-1 d-flex justify-content-center">
+  <div class="row p-2 m-2">
+    <div class="col p-1 d-flex justify-content-left">
       <h3>Recent blog posts</h3>
     </div>
+    <div class="col p-1">
+      <div class="float-right">
+        <a class="btn btn-primary" href="/blog"><span class="buttontext">View All</span></a>
+      </div>
+    </div>
   </div>
-  <div class="row p-1">
+
+  <div class="row p-2">
 {% for i in (0..2) %}
 
     <div class="col-md-4 col-sm-12 p-1">
-      <div class="card m-1 p-3">
-        <h4><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a></h4>
-
-        {% avatar {{ site.posts[i].githubid }} %}
-        <h4>{{ site.posts[i].author }}</h4><br>
-        <p>{{ site.posts[i].date | date: "%d %b %Y" }}</p>
-
+      <div class="card blog-card shadow m-2">
         <div>
-          <img src="/w3images/nature.jpg" style="width:80%" class="w3-margin-bottom">
-          <p>{{ site.posts[i].excerpt }}</p>
+          <a href="{{ site.posts[i].url }}"><img src="{{ site.posts[i].image_thumb }}" style="width:100%" class="w3-margin-bottom"></a>
+        </div>
+        <div class="p-3">
+          <h4><a href="{{ site.posts[i].url }}">{{ site.posts[i].title }}</a></h4>
+          <p>{{ site.posts[i].author }} - {{ site.posts[i].date | date: "%d %b %Y" }}</p>
+
+          <div>
+            {{ site.posts[i].excerpt }}
+          </div>
+          <div>
+            <a class="btn btn-primary" href="{{ site.posts[i].url }}"><span class="buttontext">Read more</span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -83,13 +93,3 @@ layout: default
 
 
 
-<section class="email-block">
-<div class="container-fluid bg-info m-0">
-    <div class="col">
-      <p>blah</p>
-    <div class="col">
-      <div>blah</div>
-    </div>
-  </div>
-</div>
-</section>

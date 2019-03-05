@@ -1,29 +1,15 @@
 ---
 layout: post
 title:  "Getting started with Ubuntu"
-categories: linux ubuntu
+categories: linux ubuntu level-beginner
 author: Abid Khairul
 githubid: abid-khairul
+commentIssueId: 1
+image_thumb: /assets/images/ubuntu_image_thumb.jpg
+image_head: /assets/images/ubuntu_image.jpg
+
 ---
 
-<h2>Getting started with Ubuntu</h2>
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
+One thing that stood out to me after reading the "Python Developers Survey 2018" by JetBrains was that almost 70% of survey responders said they used Linux has their development environment operating system. So if you've not sure why or how to give Linux a try we'll take you through the basics.
 
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
-
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
-
-<p>
-abiafsdg;kjasfg asdgjdfkljg aslkjgdsfAhg as;lkfgh sdflgh aslgh asfghas glkhas dkgh dflgh asdklhg askglh flgh as;dlfh asdklgh dfkgha skdlgh asklgh dfkglhas dlfh adslfk <br />
-asdf lashgs;ljgh a;shg sdfj;kgh sdlgkdfasdf asdffadsj f;lsdkjf asldkjf sldfj slfjsklf sdklfj sdlfj sldfj sldfj sdlfj sdlfj sd;lfj sdfljsflsjfsl fsd fadf 
-</p>
 

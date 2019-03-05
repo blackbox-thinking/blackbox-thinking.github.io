@@ -1,44 +1,84 @@
 
-html,
-body,
-#intro {
-    height: 100%;
-}
+$bbox-color-black:  #232323;
+$bbox-color-silver: #829399;
+$bbox-color-grey:   #ccdbdc;
+$bbox-color-white:  #f9f9f9;
+
+$bbox-color-yellow: #e7c45d;
+$bbox-color-red:    #8b2635;
+$bbox-color-cyan:   #01baef;
+$bbox-color-green:  #1e9590;
+$bbox-color-blue:   #336699;
+
+$padding-from-top-to-under-navigation: 3.5rem;
+
 
 body {
-    background: #ffffff;
+    background: $bbox-color-white;
     color: #666666;
     font-family: "Open Sans", sans-serif;
-    overflow-x: hidden;
-    padding-top: 3.5rem;
+    padding-top: $padding-from-top-to-under-navigation;
     padding-bottom: 0rem;
 }
 
+.push-to-right {
+    // padding-top:     5rem;
+    // padding-left:   50rem;
+    // padding-bottom: 20rem;
+    // padding-top:     5%;
+    padding-right:  10%;
+    padding-bottom: 50%;
+}
+
+
+
 #intro {
-    background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+
+// 1440 x 720
+    // background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
+    // width: 100%;
+    // height: auto;
+    // height: 45vmax;
+    // margin: 0 auto;
+    // background-position: 0 0;
+    // position: left;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // max-height: 37.5em;
 }
 
-#blog-list {
-    background: url("/assets/images/negative-space-coffee-macbook-notepad.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 50%;
+@media (max-width: 770px) {
+    #intro {
+        background-color: #444444
+    }
 }
 
-main {
-    padding: 0 0;
-//    background: linear-gradient(45deg, #b2e9d5, #1dc8cd);
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
+@media (min-width: 771px) {
+    #intro {
+        background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
+        position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+            // width: 100%;
+        // height: auto;
+        // background-size: cover;
+    }
+}
+
+// #blog-list {
+//     background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/negative-space-coffee-macbook-notepad.jpg") no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     height: 50%;
+// }
+
+.blog-card {
+    height: 40rem
 }
 
 .bg-black {
@@ -49,48 +89,38 @@ main {
     display: inline-block;
 }
 
-.quote-box {
-    margin: auto;
-    margin-top: 20%;
-    padding: 10px;
-    background-color: white;
-    text-align: center;
-    width: 400px;
-    border-radius: 3px;
-    box-shadow: 5px 5px 5px #666666;
-  }
-  
-  #quote {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  .author {
-    font-size: 18px;
-    text-align: right;
-    position: relative;
-  }
-  
-  button {
+.bbox-divider {
+    background-color: $bbox-color-blue;
+}
+
+.about-bbox {
+    background-color: $bbox-color-cyan;
+}
+
+.blog-post-top-3 {
+    background-color: $bbox-color-white;
+}
+
+button {
     height: 30px;
     padding: 5px;
     width: 95px;
     background-color: #444444;
     border: none;
     border-radius: 2px;
-    color: white;
+    color: $bbox-color-white;
     position: relative;
     left: -70px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     opacity: 0.9;
     position: relative;
     top: -2px;
     left: -72px;
     box-shadow: 2px 2px 2px black;
-  }
+}
 
-  #button-text {
-    color: #DDDDDD;
-  }
+#button-text {
+    color: $bbox-color-white;
+}
