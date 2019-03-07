@@ -1,13 +1,13 @@
   <header>
-    <!-- nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
-    <div class="container">
-
-      <a class="navbar-brand" href="/">Blackbox Thinking</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="clearfix">
+      <span class="float-left top-logo"><a href="/"><img src="https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/blackbox-logo-70x267.png" alt="Blackbox Thinking"></a></span>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+      <a class="navbar-brand" href="#">.</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-collapse collapse text-center" id="navbarCollapse" style="">
         <ul class="navbar-nav ml-auto">
 {% for item in site.data.navigation %}
           <li class="nav-item{% if page.url == item.link %} active{% endif %}">
@@ -16,6 +16,5 @@
 {% endfor %}
         </ul>
       </div>
-    </div>
     </nav>
   </header>

@@ -1,0 +1,132 @@
+// Blackbox greyscale colors
+$bbox-color-black:  #232323;
+$bbox-color-silver: #829399;
+$bbox-color-grey:   #ccdbdc;
+$bbox-color-white:  #f9f9f9;
+
+// Blackbox theme colors
+$bbox-color-yellow: #e7c45d;
+$bbox-color-red:    #8b2635;
+$bbox-color-cyan:   #01baef;
+$bbox-color-green:  #1e9590;
+$bbox-color-blue:   #336699;
+
+body {
+    background-color: $bbox-color-white;
+    color: $bbox-color-black;
+    font-family: -apple-system,BlinkMacSystemFont,Arial,"Open Sans",sans-serif;
+    // position page under nav-bar
+    padding-top: 3.5rem;
+    padding-bottom: 0rem;
+    min-height: 75rem;
+
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.top-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin: 0.5rem;
+}
+
+#intro {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+// 1440 x 720
+    // background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
+    // width: 100%;
+    // height: auto;
+    // height: 45vmax;
+    // margin: 0 auto;
+    // background-position: 0 0;
+    // position: left;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // max-height: 37.5em;
+}
+
+@include media-breakpoint-down(sm) {
+    #intro {
+        background-color: #444444
+    }
+
+    .intro-text {
+        // padding-top:     5rem;
+        // padding-left:   50rem;
+        // padding-bottom: 20rem;
+        // padding-top:     5%;
+        padding-right:   8rem;
+        padding-bottom:  3rem;
+        color: $bbox-color-grey;
+    }
+    
+}
+
+@include media-breakpoint-up(sm) {
+    #intro {
+        background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+            // width: 100%;
+        height: auto;
+        // background-size: cover;
+    }
+
+
+    .intro-text {
+        // padding-top:     5rem;
+        // padding-left:   50rem;
+        // padding-bottom: 20rem;
+        // padding-top:     5%;
+        padding-right:   8rem;
+        padding-bottom: 20rem;
+        color: $bbox-color-grey;
+    }
+}
+
+
+
+
+
+// #blog-list {
+//     background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/negative-space-coffee-macbook-notepad.jpg") no-repeat center center;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     height: 50%;
+// }
+
+.blog-card {
+    height: 40rem
+}
+
+.bg-black {
+    background-color: $bbox-color-black;
+}
+
+.keep-inline {
+    display: inline-block;
+}
+
+.bbox-divider {
+    background-color: $bbox-color-blue;
+}
+
+.about-bbox {
+    background-color: $bbox-color-cyan;
+}
+
+.blog-post-top-3 {
+    background-color: $bbox-color-white;
+}
+
