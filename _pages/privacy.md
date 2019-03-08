@@ -1,17 +1,15 @@
 ---
 layout: default
-title: Courses
-permalink: /courses
+title: Terms and Privacy
+permalink: /privacy
 ---
-
 
 <br />
 <br />
 <h1>{{ page.title }}</h1>
 
 <p>
-* A list item
-* Another list item
+We value your privacy
 </p>
 
 <br />
@@ -40,6 +38,3 @@ permalink: /courses
 <br />
 <br />
 <br />
-
-
-

@@ -10,15 +10,16 @@ $bbox-color-red:    #8b2635;
 $bbox-color-cyan:   #01baef;
 $bbox-color-green:  #1e9590;
 $bbox-color-blue:   #336699;
+$bbox-color-blue-faded: rgba(51, 102, 153, 0.4);
 
 body {
     background-color: $bbox-color-white;
     color: $bbox-color-black;
-    font-family: -apple-system,BlinkMacSystemFont,Arial,"Open Sans",sans-serif;
+    font-family: "Open Sans",sans-serif;
     // position page under nav-bar
     padding-top: 3.5rem;
     padding-bottom: 0rem;
-    min-height: 75rem;
+    min-height: 40rem;
 
     margin: 0;
     font-size: 1rem;
@@ -36,62 +37,13 @@ body {
 }
 
 #intro {
+    background-image: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner_bg.jpg");
+    height: 100%;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-// 1440 x 720
-    // background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
-    // width: 100%;
-    // height: auto;
-    // height: 45vmax;
-    // margin: 0 auto;
-    // background-position: 0 0;
-    // position: left;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // max-height: 37.5em;
 }
-
-// @include media-breakpoint-down(sm) {
-//     #intro {
-//         background-color: #444444
-//     }
-
-//     .intro-text {
-//         // padding-top:     5rem;
-//         // padding-left:   50rem;
-//         // padding-bottom: 20rem;
-//         // padding-top:     5%;
-//         padding-right:   8rem;
-//         padding-bottom:  3rem;
-//         color: $bbox-color-grey;
-//     }
-    
-// }
-
-// @include media-breakpoint-up(sm) {
-//     #intro {
-//         background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner_bg.jpg");
-//         position: relative;
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//             // width: 100%;
-//         height: auto;
-//         // background-size: cover;
-//     }
-
-
-//     .intro-text {
-//         // padding-top:     5rem;
-//         // padding-left:   50rem;
-//         // padding-bottom: 20rem;
-//         // padding-top:     5%;
-//         padding-right:   8rem;
-//         padding-bottom: 20rem;
-//         color: $bbox-color-grey;
-//     }
-// }
 
 #abid_image {
     background-image: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/abid-banner.png") bottom/contain no-repeat;
@@ -105,34 +57,11 @@ body {
     }
 }
 
-#intro {
-    background-image: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner_bg.jpg");
-    height: 100%;
-}
-
-
 .intro-text {
-    // padding-top:     5rem;
-    // padding-left:   50rem;
-    // padding-bottom: 20rem;
-    // padding-top:     5%;
-    padding-right:   2rem;
-    padding-bottom: 20rem;
+    padding:    2rem;
     color: $bbox-color-grey;
+    background-color: $bbox-color-blue-faded;
 }
-
-
-
-
-
-// #blog-list {
-//     background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/negative-space-coffee-macbook-notepad.jpg") no-repeat center center;
-//     -webkit-background-size: cover;
-//     -moz-background-size: cover;
-//     -o-background-size: cover;
-//     background-size: cover;
-//     height: 50%;
-// }
 
 .blog-card {
     height: 40rem
@@ -141,6 +70,7 @@ body {
 .bg-black {
     background-color: $bbox-color-black;
 }
+
 
 .keep-inline {
     display: inline-block;
