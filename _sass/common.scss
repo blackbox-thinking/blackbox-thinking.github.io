@@ -53,44 +53,72 @@ body {
     // max-height: 37.5em;
 }
 
-@include media-breakpoint-down(sm) {
-    #intro {
-        background-color: #444444
-    }
+// @include media-breakpoint-down(sm) {
+//     #intro {
+//         background-color: #444444
+//     }
 
-    .intro-text {
-        // padding-top:     5rem;
-        // padding-left:   50rem;
-        // padding-bottom: 20rem;
-        // padding-top:     5%;
-        padding-right:   8rem;
-        padding-bottom:  3rem;
-        color: $bbox-color-grey;
-    }
+//     .intro-text {
+//         // padding-top:     5rem;
+//         // padding-left:   50rem;
+//         // padding-bottom: 20rem;
+//         // padding-top:     5%;
+//         padding-right:   8rem;
+//         padding-bottom:  3rem;
+//         color: $bbox-color-grey;
+//     }
     
+// }
+
+// @include media-breakpoint-up(sm) {
+//     #intro {
+//         background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner_bg.jpg");
+//         position: relative;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//             // width: 100%;
+//         height: auto;
+//         // background-size: cover;
+//     }
+
+
+//     .intro-text {
+//         // padding-top:     5rem;
+//         // padding-left:   50rem;
+//         // padding-bottom: 20rem;
+//         // padding-top:     5%;
+//         padding-right:   8rem;
+//         padding-bottom: 20rem;
+//         color: $bbox-color-grey;
+//     }
+// }
+
+#abid_image {
+    background-image: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/abid-banner.png") bottom/contain no-repeat;
+
+    height: 100%;
+    vertical-align: bottom;
+
+    .img {
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
-@include media-breakpoint-up(sm) {
-    #intro {
-        background: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner.jpg");
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-            // width: 100%;
-        height: auto;
-        // background-size: cover;
-    }
+#intro {
+    background-image: url("https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/home_banner_bg.jpg");
+    height: 100%;
+}
 
 
-    .intro-text {
-        // padding-top:     5rem;
-        // padding-left:   50rem;
-        // padding-bottom: 20rem;
-        // padding-top:     5%;
-        padding-right:   8rem;
-        padding-bottom: 20rem;
-        color: $bbox-color-grey;
-    }
+.intro-text {
+    // padding-top:     5rem;
+    // padding-left:   50rem;
+    // padding-bottom: 20rem;
+    // padding-top:     5%;
+    padding-right:   2rem;
+    padding-bottom: 20rem;
+    color: $bbox-color-grey;
 }
 
 
