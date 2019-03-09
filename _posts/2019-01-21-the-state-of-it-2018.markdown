@@ -5,8 +5,7 @@ categories: report level-all
 author: Abid Khairul
 githubid: abid-khairul
 commentIssueId: 1
-image_thumb: /assets/images/state_of_it_2018_image_thumb.jpg
-image_head: /assets/images/state_of_it_2018_image.jpg
+image_head: blog-image-default.png
 
 ---
 

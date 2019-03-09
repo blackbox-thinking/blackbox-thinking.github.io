@@ -3,89 +3,105 @@ layout: default
 title: Blog
 permalink: /blog
 ---
-  <div  id="blog-list" class="container-fluid">
-    <div class="row pt-5">
-      <div class="col">&nbsp;</div>
-      <div class="col">
-        <h1>Blog Posts</h1>
-      </div>
-    </div>
-    <div class="row py-5">
-      <div class="col">&nbsp;</div>
-      <div class="col">
-          Read about the latest things I've been working on.
-      </div>
-    </div>
-  </div>
+  <!-- Page Content -->
+  <div class="container">
 
-<section class="email-block">
-<div class="container-fluid bg-info m-0">
-  <div class="row py-5">
-    <div class="col-md-12">
-      <p>blah</p>
-    </div>
-  </div>
-</div>
-</section>
+    <div class="row">
 
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
 
-<h2>Categories</h2>
-<ul>
-{% assign categories_list = site.categories %}
-  {% if categories_list.first[0] == null %}
-    {% for category in categories_list %}
-      <li><a href="#{{ category }}">{{ category | capitalize }} ({{ site.tags[category].size }})</a></li>
-    {% endfor %}
-  {% else %}
-    {% for category in categories_list %}
-      <li><a href="#{{ tag[0] }}">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
-    {% endfor %}
-  {% endif %}
-{% assign categories_list = nil %}
-</ul>
+        <h1 class="my-4">Blog Posts</h1>
+        <h1> <small>A view in to the world of industry experts</small></h1>
 
-{% for tag in site.categories %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h3>
-  <ul>
-    {% assign pages_list = tag[1] %}
-    {% for post in pages_list %}
-      {% if post.title != null %}
-      {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} - <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></li>
-      {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
-  </ul>
-{% endfor %}
+        <!-- Blog Post -->
 
-
-<section class="blog-post-list">
-<div class="container-fluid m-0">
-  <div class="row p-1">
 {% for post in site.posts %}
 
-    <div class="col-md-4 col-sm-12 p-1">
-      <div class="card blog-card shadow m-2">
-        <div>
-          <a href="{{ post.url }}"><img src="{{ post.image_thumb }}" style="width:100%" class="w3-margin-bottom"></a>
-        </div>
-        <div class="p-3">
-          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-          <p>{{ post.author }} - {{ post.date | date: "%d %b %Y" }}</p>
+        {% capture post_categories %}
+        {% for category in post.categories %}'{{ category }}'{% unless forloop.last %},{% endunless %}{% endfor %}
+        {% endcapture %}
 
-          <div>
-            {{ post.excerpt }}
+        <div class="card mb-4" data-categories="{{ post_categories }}">
+          <a href="{{ post.url }}">
+            <img class="card-img-top blog_img" src="{{ site.img_root }}/{{ post.image_head }}" width="750" height="250" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="card-text">{{ post.excerpt }}</p>
+            <a href="{{ post.url }}" class="btn btn-primary">Read More &rarr;</a>
           </div>
-          <div>
-            <a class="btn btn-primary" href="{{ post.url }}"><span class="buttontext">Read more</span></a>
+          <div class="card-footer text-muted">
+            Posted on {{ post.date | date: "%d %b %Y" }} by
+            <a href="#">{{ post.author }}</a>
           </div>
         </div>
-      </div>
-    </div>
 
 {% endfor %}
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+            <a class="page-link" href="#">&larr; Older</a>
+          </li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Newer &rarr;</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Categories Widget -->
+        <div class="card my-4 position-fixed">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#">HTML</a>
+                  </li>
+                  <li>
+                    <a href="#">Freebies</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutorials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        {% comment %}
+        <div class="card my-4">
+          <h5 class="card-header">Side Widget</h5>
+          <div class="card-body">
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+          </div>
+        </div>
+        {% endcomment %}
+      </div>
+
+    </div>
+    <!-- /.row -->
+
   </div>
-</div>
-</section>
+  <!-- /.container -->

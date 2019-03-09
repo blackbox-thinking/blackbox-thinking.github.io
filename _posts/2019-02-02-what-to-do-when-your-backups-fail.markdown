@@ -5,8 +5,7 @@ categories: agile people level-all
 author: Abid Khairul
 githubid: abid-khairul
 commentIssueId: 1
-image_thumb: /assets/images/backup_image_thumb.jpg
-image_head: /assets/images/backup_image.jpg
+image_head: blog-image-default.png
 ---
 
 I was working with a customer a while ago when a system upgrade to patch a security vulnerability did not go as planned. While restoring the users profiles and workspaces we realised that the backup had become corrupted and it dawned upon us that most user accounts had been lost.

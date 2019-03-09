@@ -5,8 +5,7 @@ categories: linux ubuntu level-beginner
 author: Abid Khairul
 githubid: abid-khairul
 commentIssueId: 1
-image_thumb: /assets/images/ubuntu_image_thumb.jpg
-image_head: /assets/images/ubuntu_image.jpg
+image_head: blog-image-default.png
 
 ---
 
