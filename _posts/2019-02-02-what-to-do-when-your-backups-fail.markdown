@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What to do when your backups fail"
-categories: agile people level-all
+categories: level-all agile people
 author: Abid Khairul
 githubid: abid-khairul
 commentIssueId: 1
@@ -12,3 +12,4 @@ I was working with a customer a while ago when a system upgrade to patch a secur
 
 This is how the events of that upgrade played out. There were a number of failures and lessons learnt but also some key successes that we'll also discuss.
 
+More to come ...
