@@ -1,11 +1,22 @@
 # Setup
-name:         Blackbox Thinking
-title:        Blackbox Thinking
+name:         "Blackbox Thinking"
+title:        "Blackbox Thinking"
 locale:       "en"
+
+description:  "Mastering technology. Not a slave to it."
+logo: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/bbox-logo-web.png"
 
 # Gems
 plugins:
-  - jekyll-avatar
+  - jekyll-seo-tag
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/bbox-logo-web.png"
 
 #Others
 markdown: kramdown
@@ -18,9 +29,8 @@ collections:
     output: true
     permalink: /:collection/:name
 
-
 # Site Settings
-url: "http://localhost:4000"
+url: "https://www.blackboxthinking.com/"
 img_root: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images"
 
 # Build Settings
@@ -29,4 +39,22 @@ sass:
 include: ['_pages']
 kramdown:
   input: GFM
+
+# Social media
+twitter:
+  username: abid_khairul
+  card: summary
+
+facebook:
+  publisher: https://www.facebook.com/bboxthinking/
+
+social:
+  name: Blackbox Thinking
+  links:
+    - https://twitter.com/abid_khairul
+    - https://www.facebook.com/bboxthinking/
+    - https://www.linkedin.com/company/blackbox-thinking/
+    - https://github.com/blackbox-thinking/
+
+# google_site_verification: xxxxx
 
