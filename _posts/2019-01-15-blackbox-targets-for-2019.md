@@ -1,11 +1,13 @@
 ---
 layout: post
 title:  "Blackbox Thinking targets for 2019"
+description: "A look at the year ahead for Blackbox Thinking"
+image: https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/20190115-blackbox-targets.png
 categories: level-all report
 author: Abid Khairul
 githubid: abid-khairul
 commentIssueId: 1
-image_head: blog-image-default.png
+image_head: 20190115-blackbox-targets.png
 
 ---
 
