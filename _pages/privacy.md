@@ -11,30 +11,9 @@ permalink: /privacy
 <p>
 We value your privacy
 </p>
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<p>
+Currently this site does not track any behaviour of it's visitors.
+</p>
+<p>
+We will never sell our customer data.
+</p>
