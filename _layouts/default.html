@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="{{ page.lang | default: site.lang | default: "en" }}">
+    {%- include head.html -%}
 
-  {% include head.html %}
+    <body data-bs-spy="scroll" data-bs-target="#navTop">
 
-  <body>
+    {%- include nav.html -%}
 
-    {% include navigation.html %}
+        {{ content }}
 
-    {{ content }}
+    {%- include footer.html -%}
 
-    {% include footer.html %}
-
-    {% include javascript_at_page_end.html %}
-
+    {%- include javascript_at_footer.html -%}
   </body>
 </html>

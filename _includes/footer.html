@@ -1,50 +1,23 @@
-  <div class="container-fluid m-0 bbox-divider">
-    <div class="row">
-      <div class="col">
-        <div>&nbsp;</div>
-      </div>
-    </div>
-  </div>
 <footer>
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col">
-        <div class="pb-2">Join our community by <span class="keep-inline">following on social networks</span></div>
+  <div class="bg-black w-100 overflow-hidden">
+    <div class="container py-1 vh-1">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 text-center">
+          <a href="https://www.linkedin.com/company/blackbox-thinking/" aria-label="Brings you to the social media platform Linked In" class="btn btn-dark shadow rounded-circle me-3 mt-4">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/blackbox-thinking" aria-label="Brings you to the coding platform Github" class="btn btn-dark shadow rounded-circle me-3 mt-4">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center py-3">
+        <div class="col-12 col-lg-10 col-xl-8 text-center">
+          <p>
+            Copyright &copy; 2012 - {{ "now" | date: "%Y" }} Blackbox Thinking Limited | 
+            <a href="/privacy">Terms of Use &amp; Privacy Policy</a>
+          </p>
       </div>
     </div>
-    <div class="row d-flex justify-content-center">
-      <div class="col">
-      <ul class="social-networks">
-  {% for social_network in site.data.social_networks %}
-        <li>
-          <a href="{{ social_network.link }}">
-            <span class="fa-stack fa-2x">
-              <i class="fas bg-{{ social_network.icon_name }} fa-circle fa-stack-2x"></i>
-              <i class="fab fa-{{ social_network.icon_name }} fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-  {% endfor %}
-      </ul>
-    </div>
-    </div>
   </div>
-  <div class="container-fluid copyright">
-    <div class="row d-flex justify-content-center my-0">
-      <div class="col">
-      <p>
-        See something on this page that is not quite right?
-        <span class="keep-inline"><a href="https://github.com/blackbox-thinking/blackbox-thinking.github.io">Raise a pull request</a></span>
-      </p>
-    </div>
-    </div>
-    <div class="row d-flex justify-content-center my-0">
-      <div class="col">
-      <p>
-        <span class="keep-inline">&copy; 2012 - {{ "now" | date: "%Y" }} Blackbox Thinking Limited</span> | <span class="keep-inline">All rights reserved | <a href="/privacy">Terms &amp; privacy</a></span>
-      </p>
-    </div>
-    </div>
-  </div>
-  <!-- ./container -->
 </footer>

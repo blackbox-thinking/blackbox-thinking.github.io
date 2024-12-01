@@ -1,60 +1,134 @@
-# Setup
-name:         "Blackbox Thinking"
-title:        "Blackbox Thinking"
-locale:       "en"
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-description:  "Mastering technology. Not a slave to it."
-logo: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/bbox-logo-web.png"
+title: Blackbox Thinking
+description: >- # this means to ignore newlines until "baseurl:"
+  Tech Simplified. Success Amplified.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.blackboxthinking.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Gems
+# Build settings
+theme: minima
 plugins:
-  - jekyll-seo-tag
+  - jekyll-feed
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      image: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images/bbox-logo-web.png"
-
-#Others
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# Set the URL format
-permalink: none
 
-collections:
-  authors:
-    output: true
-    permalink: /:collection/:name
-
-# Site Settings
-url: "https://www.blackboxthinking.com/"
-img_root: "https://s3.eu-west-2.amazonaws.com/assets.blackboxthinking.com/images"
-
-# Build Settings
-sass:
-  sass_dir: _sass
-include: ['_pages']
+# Markdown Processing
 kramdown:
   input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-# Social media
-twitter:
-  username: abid_khairul
-  card: summary
 
-facebook:
-  publisher: https://www.facebook.com/bboxthinking/
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-social:
-  name: Blackbox Thinking
-  links:
-    - https://twitter.com/abid_khairul
-    - https://www.facebook.com/bboxthinking/
-    - https://www.linkedin.com/company/blackbox-thinking/
-    - https://github.com/blackbox-thinking/
 
-# google_site_verification: xxxxx
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
